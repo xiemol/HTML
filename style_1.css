@@ -1,0 +1,213 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+* {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+body {
+  line-height: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  letter-spacing: 1.5px;
+  word-spacing: normal;
+}
+
+section h2+p {
+  text-indent: 20px;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover {
+  color: #a66;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:active {
+  color: aquamarine;
+}
+
+section p a::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url("link.png");
+  background-size: cover;
+  margin-left: 3px;
+}
+
+ul,
+ol {
+  line-height: 1.5em;
+}
+
+ul,
+ol,
+p {
+  padding-top: 8px;
+}
+
+h2+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url("star.png");
+  background-size: cover;
+}
+
+h2+ul {
+  list-style-type: none;
+}
+
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 清除默认样式 */
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  background-color: #6e460544;
+  /* 导航栏背景颜色 */
+  width: 170px;
+  /* 导航栏宽度 */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列 */
+}
+
+.menu li {
+  margin-bottom: 70px;
+  /* 设置菜单项之间的间距 */
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #582c14;
+}
+
+nav {
+  position: relative;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  /* 在交叉轴上居中对齐 */
+  justify-content: center;
+  /* 在主轴上居中对齐 */
+}
+
+body {
+  font-family: serif;
+}
+
+@font-face {
+  font-family: 'AlexBrush';
+  src: url(AlexBrush-Regular.ttf);
+}
+
+h1,
+h2 {
+  font-family: AlexBrush, sans-serif;
+}
